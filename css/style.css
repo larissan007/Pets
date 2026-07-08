@@ -45,7 +45,6 @@ header {
 
 .descricao {
     font-size: 14px;
-    opacity: 0.9;
 }
 
 .menu-principal {
@@ -58,12 +57,12 @@ header {
     color: white;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 6px;
+    border-radius: 20px;
     font-weight: bold;
 }
 
 .menu-principal a:hover {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.185);
 }
 
 .botao {
@@ -226,7 +225,7 @@ th {
 
 .conteudo-rodape {
     display: flex;
-    
+
     gap: 20px;
     padding: 2%;
 }
