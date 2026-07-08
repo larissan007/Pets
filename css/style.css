@@ -20,23 +20,53 @@ header {
     color: white;
 }
 
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.marca h2 {
+    color: white;
     font-size: 24px;
-    font-weight: bold;
+    margin-bottom: 4px;
+    text-align: left;
 }
 
-nav a {
-    color: rgb(255, 255, 255);
+.slogan {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.descricao {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.menu-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-principal a {
+    color: white;
     text-decoration: none;
-    margin-left: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
     font-weight: bold;
 }
-.nav a:hover{
-    background: rgba(255, 255, 255, 0.685);
+
+.menu-principal a:hover {
+    background: rgba(255, 255, 255, 0.25);
 }
 
-.btn {
-    display: inline-block;
+.botao {
     background: white;
     color: #4CAF50;
     padding: 12px 20px;
@@ -44,9 +74,12 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+.botao:hover {
+    background: #3f9143;
+    color:#ffffff;
+}
 
-.hero {
-    
+.banner-principal {
     display: flex;
     align-items: center;
     padding: 10%;
@@ -56,13 +89,13 @@ nav a {
     background-repeat: no-repeat;
 }
 
-.hero h1 {
+.banner-principal h1 {
     font-size: 70px;
     margin-bottom: 20px;
     color: #dce8c7;
 }
 
-.hero p {
+.banner-principal p {
     margin-bottom: 25px;
     font-size: 25px;
     color: white;
@@ -75,65 +108,166 @@ section {
 h2 {
     text-align: center;
     margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 40px;
     color: #4CAF50;
 }
 
-.cards {
+.sobre,
+.servicos,
+.portfolio,
+.depoimentos,
+.equipe,
+.planos,
+.blog,
+.perguntas-frequentes {
+    background: white;
+    margin: 20px 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.historia {
+    background: #f4fbf4;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.historia h3,
+.card-sobre h3,
+.cartao h3,
+.cartao-projeto h3,
+.cartao-depoimento h3,
+.cartao-equipe h3,
+.cartao-blog h3 {
+    color: #2f7d32;
+    margin-bottom: 10px;
+}
+
+.grade-sobre,
+.grade-cartoes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
-.card {
+.card-sobre,
+.cartao,
+.cartao-projeto,
+.cartao-depoimento,
+.cartao-equipe,
+.cartao-blog {
     background: white;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: center;
 }
 
-.sobre p {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1rem;
+.card-sobre ol {
+    padding-left: 20px;
 }
 
-.contact-box {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+.icon {
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
-.contact-line {
-    padding: 12px;
-    border: 1px solid #d0d7de;
-    border-radius: 8px;
+.cartao-projeto img,
+.cartao-equipe img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-bottom: 12px;
-    color: #7a869a;
-    background: #fff;
 }
 
-button {
+.cidade,
+.cargo {
+    color: #6f7a87;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th,
+td {
+    border: 1px solid #dfe7df;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
     background: #4CAF50;
     color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
-button:hover,
-.btn:hover {
-    background: #3f9143;
+.lista-perguntas {
+    display: grid;
+    gap: 12px;
+}
+
+.lista-perguntas details {
+    background: #f9fcf9;
+    padding: 14px 16px;
+    border-radius: 10px;
+}
+
+.lista-perguntas summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2f7d32;
+}
+
+.conteudo-rodape {
+    display: flex;
+    
+    gap: 20px;
+    padding: 2%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 footer {
+    justify-content:center;
     background: #333;
     color: white;
-    padding: 25px;
+    padding: 1%;
+    text-align: left;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.redes a {
+    display: inline-flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
     text-align: center;
 }
 
